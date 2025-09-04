@@ -18,7 +18,7 @@ export default function Index() {
                 Автошкола №1
               </div>
               <nav className="hidden md:flex space-x-8">
-                <a href="#" className="text-gray-700 hover:text-primary transition-colors">О нас</a>
+                <a href="#about" className="text-gray-700 hover:text-primary transition-colors">О нас</a>
                 <a href="#services" className="text-gray-700 hover:text-primary transition-colors">Услуги</a>
                 <a href="#advantages" className="text-gray-700 hover:text-primary transition-colors">Преимущества</a>
                 <a href="#contacts" className="text-gray-700 hover:text-primary transition-colors">Контакты</a>
@@ -69,6 +69,182 @@ export default function Index() {
                   />
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Company Section */}
+      <section id="about" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-4xl font-heading font-bold text-primary mb-6">
+                О нашей компании
+              </h2>
+              <p className="text-lg text-gray-700 mb-6">
+                С 1995 года мы являемся лидером в области подготовки водителей в Перми. 
+                За 29 лет работы через нашу автошколу прошли более 50 000 учеников, 
+                большинство из которых сдали экзамены с первого раза.
+              </p>
+              <p className="text-lg text-gray-700 mb-8">
+                Мы гордимся нашей репутацией и продолжаем развиваться, внедряя 
+                современные методы обучения и обновляя автопарк.
+              </p>
+              
+              <div className="grid grid-cols-2 gap-8 mb-8">
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-secondary mb-2">29</div>
+                  <p className="text-gray-600">лет на рынке</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-secondary mb-2">50k+</div>
+                  <p className="text-gray-600">выпускников</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-secondary mb-2">98%</div>
+                  <p className="text-gray-600">сдача с 1 раза</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-secondary mb-2">45</div>
+                  <p className="text-gray-600">инструкторов</p>
+                </div>
+              </div>
+              
+              <div className="flex flex-wrap gap-4">
+                <Badge variant="outline" className="px-4 py-2">
+                  <Icon name="Award" size={16} className="mr-2" />
+                  Лицензия ГИБДД
+                </Badge>
+                <Badge variant="outline" className="px-4 py-2">
+                  <Icon name="Shield" size={16} className="mr-2" />
+                  Страховка учеников
+                </Badge>
+                <Badge variant="outline" className="px-4 py-2">
+                  <Icon name="Users" size={16} className="mr-2" />
+                  Опытные кадры
+                </Badge>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <Card className="overflow-hidden">
+                <CardContent className="p-0">
+                  <img 
+                    src="/img/3e0f2a43-3db1-4597-baa3-d0925954e4a8.jpg" 
+                    alt="Директор автошколы"
+                    className="w-full h-80 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-heading font-semibold mb-2">Владимир Петрович</h3>
+                    <p className="text-gray-600 mb-4">Директор автошколы</p>
+                    <p className="text-gray-700 italic">
+                      "Наша цель — не просто научить водить, а воспитать ответственных 
+                      участников дорожного движения"
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Consultation Form Section */}
+      <section className="py-20 bg-secondary text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-heading font-bold mb-4">
+              Получите консультацию специалиста
+            </h2>
+            <p className="text-xl opacity-90">
+              Ответим на все ваши вопросы и поможем выбрать подходящий курс обучения
+            </p>
+          </div>
+          
+          <Card className="bg-white text-gray-900">
+            <CardContent className="p-8">
+              <form className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <Label htmlFor="consult-name">Ваше имя *</Label>
+                    <Input id="consult-name" placeholder="Введите ваше имя" required />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="consult-phone">Телефон *</Label>
+                    <Input id="consult-phone" placeholder="+7 (999) 123-45-67" required />
+                  </div>
+                </div>
+                
+                <div className="space-y-2">
+                  <Label htmlFor="consult-category">Интересующая категория</Label>
+                  <select id="consult-category" className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <option value="">Выберите категорию</option>
+                    <option value="A">Категория A — Мотоциклы</option>
+                    <option value="B">Категория B — Легковые автомобили</option>
+                    <option value="C">Категория C — Грузовые автомобили</option>
+                    <option value="D">Категория D — Автобусы</option>
+                  </select>
+                </div>
+                
+                <div className="space-y-2">
+                  <Label htmlFor="consult-time">Удобное время для звонка</Label>
+                  <select id="consult-time" className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <option value="">Выберите время</option>
+                    <option value="morning">Утром (9:00 - 12:00)</option>
+                    <option value="afternoon">Днем (12:00 - 17:00)</option>
+                    <option value="evening">Вечером (17:00 - 20:00)</option>
+                  </select>
+                </div>
+                
+                <div className="space-y-2">
+                  <Label htmlFor="consult-question">Ваш вопрос</Label>
+                  <Textarea 
+                    id="consult-question" 
+                    placeholder="Расскажите, что вас интересует: цены, расписание, документы..." 
+                    rows={4}
+                  />
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                  <Button size="lg" className="flex-1">
+                    <Icon name="Phone" size={20} className="mr-2" />
+                    Заказать звонок
+                  </Button>
+                  <Button size="lg" variant="outline" className="flex-1">
+                    <Icon name="MessageCircle" size={20} className="mr-2" />
+                    Написать в WhatsApp
+                  </Button>
+                </div>
+                
+                <p className="text-sm text-gray-500 text-center">
+                  Нажимая кнопку, вы соглашаетесь с обработкой персональных данных
+                </p>
+              </form>
+            </CardContent>
+          </Card>
+          
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Clock" size={32} className="text-white" />
+              </div>
+              <h3 className="text-xl font-heading font-semibold mb-2">Быстрый ответ</h3>
+              <p className="opacity-90">Перезвоним в течение 5 минут</p>
+            </div>
+            <div>
+              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="UserCheck" size={32} className="text-white" />
+              </div>
+              <h3 className="text-xl font-heading font-semibold mb-2">Персональный подход</h3>
+              <p className="opacity-90">Подберем программу под ваши цели</p>
+            </div>
+            <div>
+              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Gift" size={32} className="text-white" />
+              </div>
+              <h3 className="text-xl font-heading font-semibold mb-2">Бонусы</h3>
+              <p className="opacity-90">Скидки и подарки для новых учеников</p>
             </div>
           </div>
         </div>
