@@ -20,7 +20,8 @@ export default function Index() {
               <nav className="hidden md:flex space-x-8">
                 <a href="#about" className="text-gray-700 hover:text-primary transition-colors">О нас</a>
                 <a href="#services" className="text-gray-700 hover:text-primary transition-colors">Услуги</a>
-                <a href="#advantages" className="text-gray-700 hover:text-primary transition-colors">Преимущества</a>
+                <a href="#documents" className="text-gray-700 hover:text-primary transition-colors">Документы</a>
+                <a href="#reviews" className="text-gray-700 hover:text-primary transition-colors">Отзывы</a>
                 <a href="#contacts" className="text-gray-700 hover:text-primary transition-colors">Контакты</a>
               </nav>
             </div>
