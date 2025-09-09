@@ -151,6 +151,359 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Documents Section */}
+      <section id="documents" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-heading font-bold text-primary mb-4">
+              Наши документы
+            </h2>
+            <p className="text-xl text-gray-600">
+              Официальные лицензии и сертификаты автошколы
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                    <Icon name="FileCheck" size={24} className="text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading text-lg font-semibold">Лицензия на обучение</h3>
+                    <p className="text-sm text-gray-500">№ 12345 от 15.03.2024</p>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Лицензия на осуществление образовательной деятельности по подготовке водителей
+                </p>
+                <Button variant="outline" className="w-full" asChild>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Download" size={16} className="mr-2" />
+                    Скачать PDF
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4">
+                    <Icon name="Shield" size={24} className="text-secondary" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading text-lg font-semibold">Сертификат ГИБДД</h3>
+                    <p className="text-sm text-gray-500">№ 67890 от 22.01.2024</p>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Сертификат соответствия требованиям Госавтоинспекции
+                </p>
+                <Button variant="outline" className="w-full" asChild>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Download" size={16} className="mr-2" />
+                    Скачать PDF
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                    <Icon name="Building" size={24} className="text-green-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading text-lg font-semibold">Свидетельство о регистрации</h3>
+                    <p className="text-sm text-gray-500">ОГРН 1165958053210</p>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Официальная регистрация юридического лица
+                </p>
+                <Button variant="outline" className="w-full" asChild>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Download" size={16} className="mr-2" />
+                    Скачать PDF
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <Icon name="Car" size={24} className="text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading text-lg font-semibold">Паспорта автомобилей</h3>
+                    <p className="text-sm text-gray-500">35 единиц автопарка</p>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  ПТС и свидетельства о регистрации всех учебных автомобилей
+                </p>
+                <Button variant="outline" className="w-full" asChild>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Download" size={16} className="mr-2" />
+                    Посмотреть список
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                    <Icon name="GraduationCap" size={24} className="text-purple-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading text-lg font-semibold">Программы обучения</h3>
+                    <p className="text-sm text-gray-500">Утверждено 01.09.2024</p>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Официальные программы подготовки водителей категорий A, B, C, D
+                </p>
+                <Button variant="outline" className="w-full" asChild>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Download" size={16} className="mr-2" />
+                    Скачать PDF
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4">
+                    <Icon name="FileText" size={24} className="text-orange-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading text-lg font-semibold">Устав и положения</h3>
+                    <p className="text-sm text-gray-500">Обновлено 12.06.2024</p>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Устав организации, положения об обучении и внутренние регламенты
+                </p>
+                <Button variant="outline" className="w-full" asChild>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Download" size={16} className="mr-2" />
+                    Скачать PDF
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="mt-16 text-center">
+            <Card className="inline-block bg-primary/5 border-primary/20">
+              <CardContent className="p-8">
+                <div className="flex items-center justify-center mb-4">
+                  <Icon name="Info" size={32} className="text-primary" />
+                </div>
+                <h3 className="text-xl font-heading font-semibold text-primary mb-2">
+                  Все наши документы прошли государственную проверку
+                </h3>
+                <p className="text-gray-600">
+                  Мы работаем полностью легально и имеем все необходимые разрешения
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Reviews Section */}
+      <section id="reviews" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-heading font-bold text-primary mb-4">
+              Отзывы наших учеников
+            </h2>
+            <p className="text-xl text-gray-600">
+              Что говорят о нас выпускники автошколы
+            </p>
+            <div className="flex items-center justify-center mt-6">
+              <div className="flex items-center space-x-1 mr-3">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Icon key={star} name="Star" size={24} className="fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <span className="text-2xl font-bold text-primary">4.9</span>
+              <span className="text-gray-500 ml-2">(из 286 отзывов)</span>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src="/img/3e0f2a43-3db1-4597-baa3-d0925954e4a8.jpg" 
+                    alt="Анна Смирнова"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div className="flex-1">
+                    <h4 className="font-semibold">Анна Смирнова</h4>
+                    <p className="text-sm text-gray-500">Категория B, 2024</p>
+                  </div>
+                  <div className="flex">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <Icon key={star} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700">
+                  "Отличная автошкола! Инструктор Иван Петрович очень терпеливый и опытный. 
+                  Сдала с первого раза без проблем! Рекомендую всем!"
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src="/img/4599ebcd-e145-46a1-aa4c-fec4df080014.jpg" 
+                    alt="Михаил Кузнецов"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div className="flex-1">
+                    <h4 className="font-semibold">Михаил Кузнецов</h4>
+                    <p className="text-sm text-gray-500">Категория C, 2024</p>
+                  </div>
+                  <div className="flex">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <Icon key={star} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700">
+                  "Получал категорию C. Очень доволен обучением! Опытные инструкторы, 
+                  современные грузовики. Цены адекватные, качество на высоте!"
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src="/img/3e0f2a43-3db1-4597-baa3-d0925954e4a8.jpg" 
+                    alt="Елена Попова"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div className="flex-1">
+                    <h4 className="font-semibold">Елена Попова</h4>
+                    <p className="text-sm text-gray-500">Категория B, 2024</p>
+                  </div>
+                  <div className="flex">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <Icon key={star} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700">
+                  "Обучалась в другой автошколе, но не смогла сдать. Перешла сюда - 
+                  и сразу почувствовала разницу. Получила права через месяц!"
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src="/img/4599ebcd-e145-46a1-aa4c-fec4df080014.jpg" 
+                    alt="Александр Волков"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div className="flex-1">
+                    <h4 className="font-semibold">Александр Волков</h4>
+                    <p className="text-sm text-gray-500">Категория A, 2024</p>
+                  </div>
+                  <div className="flex">
+                    {[1, 2, 3, 4].map((star) => (
+                      <Icon key={star} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                    ))}
+                    <Icon name="Star" size={16} className="text-gray-300" />
+                  </div>
+                </div>
+                <p className="text-gray-700">
+                  "Хотел получить мотоправа. Инструктор по мотоциклам - профессионал своего дела. 
+                  Научил водить уверенно и безопасно. Мотоциклы в хорошем состоянии."
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src="/img/3e0f2a43-3db1-4597-baa3-d0925954e4a8.jpg" 
+                    alt="Мария Лебедева"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div className="flex-1">
+                    <h4 className="font-semibold">Мария Лебедева</h4>
+                    <p className="text-sm text-gray-500">Категория B, 2024</p>
+                  </div>
+                  <div className="flex">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <Icon key={star} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700">
+                  "Очень боялась садиться за руль, но здесь меня очень поддержали. 
+                  Начала с нуля, а через 2 месяца уже уверенно езжу по городу!"
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src="/img/4599ebcd-e145-46a1-aa4c-fec4df080014.jpg" 
+                    alt="Дмитрий Новиков"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div className="flex-1">
+                    <h4 className="font-semibold">Дмитрий Новиков</h4>
+                    <p className="text-sm text-gray-500">Категория D, 2024</p>
+                  </div>
+                  <div className="flex">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <Icon key={star} name="Star" size={16} className="fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-gray-700">
+                  "Обучался на водителя автобуса. Полный курс, сразу после обучения 
+                  устроился на работу. Спасибо за качественную подготовку!"
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Button size="lg" variant="outline">
+              <Icon name="MessageSquare" size={20} className="mr-2" />
+              Посмотреть все отзывы
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Consultation Form Section */}
       <section className="py-20 bg-secondary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
